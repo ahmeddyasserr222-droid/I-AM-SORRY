@@ -5,23 +5,61 @@
 <title>Sorry</title>
 
 <style>
+
 body{
-background:black;
-color:white;
+margin:0;
+height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
-height:100vh;
-font-size:70px;
+background:linear-gradient(135deg,#000000,#2c2c2c);
 font-family:Arial;
+overflow:hidden;
+color:white;
+flex-direction:column;
 }
+
+h1{
+font-size:80px;
+opacity:0;
+animation:fade 3s forwards;
+}
+
+p{
+font-size:25px;
+opacity:0;
+animation:fade 3s forwards;
+animation-delay:2s;
+}
+
+.heart{
+font-size:60px;
+animation:beat 1s infinite;
+margin-top:20px;
+}
+
+@keyframes fade{
+from{opacity:0; transform:translateY(30px);}
+to{opacity:1; transform:translateY(0);}
+}
+
+@keyframes beat{
+0%{transform:scale(1);}
+50%{transform:scale(1.3);}
+100%{transform:scale(1);}
+}
+
 </style>
 
 </head>
 
 <body>
 
-I am sorry
+<h1>I am sorry kont naym oxembellah 😓❤️</h1>
+
+<p>I didn't mean to hurt you</p>
+
+<div class="heart">❤️</div>
 
 </body>
 
